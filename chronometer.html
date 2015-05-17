@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CRONOMETRO</title>
+	<link href="css/app.css" rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="center">
+		<form class="form-inline">
+			<div class="form-group">
+				<label for="minutes">Minutos</label>
+				<input type="text" value='15' class="form-control" id="minutes" autofocus>
+			</div>
+			<a href="#" class="btn btn-default start">
+				<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+			</a>
+			<a href="#" class="btn btn-default stop">
+				<span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+			</a>
+			<a href="#" class="btn btn-default pause">
+				<span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+			</a>
+			<a href="#" class="btn btn-default reset">
+				<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+			</a>
+			<div class="form-group">
+				<label for="message">Mensaje</label>
+				<input type="email" class="form-control" id="message">
+			</div>
+			<a href="#" class="btn btn-default" id="send">
+				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+			</a>
+		</form>
+		<br>
+		
+		<div class="time"></div>
+
+		<span class="label label-primary message-primary"></span>
+		<span class="label label-warning message-warning"></span>
+		<span class="label label-danger message-danger"></span>
+		
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/accurate_interval.js"></script>
+	<script src="js/time.js"></script>
+
+</body>
+</html>
